@@ -1,46 +1,57 @@
 package Model;
 
 public class Customer {
-    private int Customer_id;
-    private String Customer_name;
-    private int cus_license_num;
+    private int Aadhar_num;
+    private int licence_num;
     private int mobile_num;
-    public Customer(int customerId, String customerName, int cusLicenseNum, int mobileNum) {
-        Customer_id = customerId;
-        Customer_name = customerName;
-        cus_license_num = cusLicenseNum;
-        mobile_num = mobileNum;
+    private String name;
+    
+    public int getAadharNum() {
+        return Aadhar_num;
     }
-
-    public int getCustomer_id() {
-        return Customer_id;
+    
+    public void setAadharNum(int aadharNum) {
+        this.Aadhar_num = aadharNum;
     }
-
-    public void setCustomer_id(int customer_id) {
-        Customer_id = customer_id;
+    
+    public int getLicenceNum() {
+        return licence_num;
     }
-
-    public String getCustomer_name() {
-        return Customer_name;
+    
+    public void setLicenceNum(int licenceNum) {
+        this.licence_num = licenceNum;
     }
-
-    public void setCustomer_name(String customer_name) {
-        Customer_name = customer_name;
-    }
-
-    public int getCus_license_num() {
-        return cus_license_num;
-    }
-
-    public void setCus_license_num(int cus_license_num) {
-        this.cus_license_num = cus_license_num;
-    }
-
-    public int getMobile_num() {
+    
+    public int getMobileNum() {
         return mobile_num;
     }
+    
+    public void setMobileNum(int mobileNum) {
+        this.mobile_num = mobileNum;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getEmail() {
+        return email;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    private String email;
 
-    public void setMobile_num(int mobile_num) {
-        this.mobile_num = mobile_num;
+    public Customer(int AadharNum, int licenceNum, int mobileNum, String name, String email) {
+        this.Aadhar_num = AadharNum;
+        this.licence_num = licenceNum;
+        this.mobile_num = mobileNum;
+        this.name = name;
+        this.email = email;
     }
 }

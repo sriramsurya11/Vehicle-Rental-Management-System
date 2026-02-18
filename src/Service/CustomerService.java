@@ -19,6 +19,7 @@ public class CustomerService {
         int n=sc.nextInt();
         System.out.print("Enter your Licence_num:");
         int licence_num=sc.nextInt();
+        
 
 
         boolean flag=true;
